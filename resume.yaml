@@ -1,0 +1,160 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+
+basics:
+  name: Michael T. Lombardi
+  label: Humane IT Proponent
+  picture: https://pbs.twimg.com/profile_images/1062121180059058176/Bw70JEi6_400x400.jpg
+  email: michael.t.lombardi@gmail.com
+  summary: >-
+    Senior developer, toolmaker for process automation, and documentation
+    writer with a focus in working across teams to architect and improve systems
+    and solutions, reducing the time teams spend on repetitive work, and
+    improving the rate and quality of service delivery.
+  profiles:
+    - network: Github
+      username: michaeltlombardi
+      url: "https://github.com/michaeltlombardi"
+    - network: Twitter
+      username: TrebuchetOps
+      url: "https://www.twitter.com/TrebuchetOps"
+work:
+  - company: Puppet, Inc
+    position: Senior Software Engineer
+    website: https://puppet.com
+    startDate: 2017-09
+    summary: >-
+      Senior Software Engineer on the Developer Experience team,
+      formerly on the Infrastructure Automation Content and Windows teams,
+      focused on mentoring and improving the experience and workflow for writing Puppet content
+      inside and outside of the organization.
+    highlights:
+      - >-
+        Co-designed and implemented the Puppet Content Template and Puppet Runtime Manager tools
+        to reimagine the development and validation of Puppet content
+      - >-
+        Developed and maintained more than 50 Puppet modules and a dozen Ruby Gems supporting module development
+      - >-
+         Co-pioneered Community Day with the team to improve throughput of open source contributions
+         and drastically improve the release cycle of tools and modules
+      - >-
+        Led transformation and standardization of team practices around development, documentation, architecture, and workflow
+  - company: Maritz
+    position: Automation Engineer
+    startDate: 2016-06
+    endDate: 2017-09
+    summary: >-
+      Automation Engineer on the Automation and Monitoring Team within the
+      Infrastructure Services organization. Responsible for cross-platform
+      automation tool development and implementation, documentation, and mentoring.
+    highlights:
+      - Developed, documented, and maintained a PowerShell module for single-sign-on across multiple domains
+      - Coached and mentored the Infrastructure department through an Agile transformation
+      - Propogated development practices across operations teams via training and mentoring
+  - company: "CSRA, Inc"
+    position: Systems Administrator
+    website: "https://www.csra.com/"
+    startDate: 2015-11
+    endDate: "2016-06"
+    summary: >-
+      Managed an infrastructure and hosting platform for US Army Surface
+      Deployment Distribution Command programs, acting as a combination of
+      hosting provider, technical support, and service architect for over 20
+      separate customers and ensuring the security and availability of systems
+      which manage the transit of material goods for the American warfighter.
+    highlights:
+      - Developed PowerShell modules for infrastructure automation
+      - Organized and executed PowerShell training for the organization
+      - Developed and documented processes for task automation
+  - company: Harris Corporation
+    position: Systems Administrator
+    website: "http://harris.com/"
+    startDate: 2013-02
+    endDate: "2015-10"
+    summary: >-
+      Ensured the coordination of aeromedical evacuations of American service
+      members globally and provided in-transit visibility of the injured service
+      members for USTRANSCOM's TRAC2ES program.
+    highlights:
+      - >-
+        Developed PowerShell modules for infrastructure auditing, maintenance,
+        orchestration, documentation, and utility functions
+      - >-
+        Engineered lifecycle for patching and rolling system upgrades to replace
+        a manual process, ensuring reproducibility and reducing associated
+        manpower costs by over 40 hours per month
+      - >-
+        Developed daily automatic reporting for project management providing
+        holistic visibility of service health and reducing time to discovery and
+        time to recovery, reducing associated manpower costs by over 20 hours
+        per month
+volunteer:
+  - organization: St. Louis PowerShell User Group
+    position: Founder
+    website: "http://www.meetup.com/STLPSUG/"
+    startDate: 2015-12
+    endDate: "2020-01"
+    summary: >-
+      Founded regional organization to make life easier for IT Professionals in
+      the St. Louis area and to build a strong and helpful community around best
+      practices and continual improvement.
+    highlights: []
+publications:
+  - name: The PowerShell Conference Book
+    releaseDate:  2018-09
+    publisher:  The DevOps Collective, Inc
+    website: https://leanpub.com/powershell-conference-book
+    summary: >-
+      Editor and contributing author to the PowerShell Conference book, a project
+      which brought more than 30 community experts together to raise funds for
+      people transitioning into IT Operations roles.
+  - name: The PowerShell Conference Book Vol 2
+    releaseDate: 2019-09
+    publisher:  The DevOps Collective, Inc
+    website: https://leanpub.com/psconfbook2
+    summary: >-
+      Lead editor and project organizer to the second volume of the PowerShell
+      Conference Book containing over 40 chapters of technical content to
+      raise money for people transitioning into IT Operations roles.
+
+skills:
+  - name: Automation Development
+    level: Senior
+    keywords:
+      - Cloud
+      - GitHub Actions
+      - PowerShell
+  - name: Configuration Management
+    level: Principal
+    keywords:
+      - PowerShell DSC
+      - Puppet
+      - Bolt
+  - name: Library Development
+    level: Senior
+    keywords:
+      - Go
+      - PowerShell
+      - Puppet
+      - Ruby
+  - name: Documentation
+    level: Expert
+    keywords:
+      - ADR
+      - Markdown
+      - Advocation
+      - Training
+interests:
+  - name: Analog Game Design
+    keywords:
+      - Tabletop Role Playing Games
+      - Narrative Skirmish Games
+      - Playing Card Games
+references: []
+projects:
+  - name: Puppet.Dsc
+    description: >-
+      Architected and led the development of Puppet.Dsc,
+      adding >350 modules and 1000s of resources to every Puppet user's toolkit with fractional maintenance costs
+    url: https://www.youtube.com/watch?v=Rw1gB-h77X0
+    sourceUrl: https://github.com/puppetlabs/Puppet.Dsc
+    startDate: 2020-03
