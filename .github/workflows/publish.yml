@@ -17,6 +17,8 @@ jobs:
           cache: 'npm'
       - name: Install Node Packages
         run: npm install
+      - name: Validate Resume Schema
+        run: npm run validate
       - name: Export Resume
         run: mkdir ./public && npm run export_html
       - name: Deploy
