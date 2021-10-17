@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - name: Install Node Packages
+        run: npm install
+      - name: Validate Schema
+        run: npm run validate
+      - name: Export Resume
+        run: mkdir ./public && npm run export_html
