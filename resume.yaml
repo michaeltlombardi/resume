@@ -6,10 +6,10 @@ basics:
   picture: https://github.com/michaeltlombardi/resume/raw/main/images/profile.jpg
   email: michael.t.lombardi@gmail.com
   summary: >-
-    Senior developer, toolmaker for process automation, and documentation
-    writer with a focus in working across teams to architect and improve systems
-    and solutions, reducing the time teams spend on repetitive work, and
-    improving the rate and quality of service delivery.
+    Senior developer, toolmaker, and writer
+    with a focus in working across teams to architect and improve systems
+    and solutions, reducing the time teams (my own and others) spend on repetitive work,
+    and improving the rate and quality of service delivery.
   profiles:
     - network: Github
       username: michaeltlombardi
@@ -24,15 +24,17 @@ work:
     startDate: 2017-09
     summary: >-
       Senior Software Engineer on the Developer Experience team,
-      formerly on the Infrastructure Automation Content and Windows teams,
-      focused on mentoring and improving the experience and workflow for writing Puppet content
+      focused improving the experience and workflow for writing Puppet content
       inside and outside of the organization.
     highlights:
       - >-
-        Co-designed and implemented the Puppet Content Template and Puppet Runtime Manager tools
-        to reimagine the development and validation of Puppet content
+        Co-designed and implemented a prototype to improve UI latency from 10s of seconds to sub-second response times without loss of functionality
       - >-
-        Developed and maintained more than 50 Puppet modules and a dozen Ruby Gems supporting module development
+        Co-designed and implemented a prototype to reimagine code execution and validation locally and in CI,
+        expanding flexibility and reducing maintenance costs for developers and users alike.
+      - >-
+        Developed and maintained more than sixty repositories of tools and libraries,
+        including cross-language exection, infrastructure configuration, code validation, and test frameworks.
       - >-
          Co-pioneered Community Day with the team to improve throughput of open source contributions
          and drastically improve the release cycle of tools and modules
@@ -153,8 +155,11 @@ references: []
 projects:
   - name: Puppet.Dsc
     description: >-
-      Architected and led the development of Puppet.Dsc,
-      adding >350 modules and 1000s of resources to every Puppet user's toolkit with fractional maintenance costs
+      Led architecture and development of Puppet.Dsc,
+      seamlessly exposing and integrating Microsoft's primary automation framework (DSC) with Puppet,
+      allowing folks familiar with either tool to be proficient with both.
+      The judicious use of automation in the project improved flexibility and coverage (hundreds of modules and thousands of resources)
+      while reducing engineering and customer maintenance costs by orders of magnitude.
     url: https://www.youtube.com/watch?v=Rw1gB-h77X0
     sourceUrl: https://github.com/puppetlabs/Puppet.Dsc
     startDate: 2020-03
