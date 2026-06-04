@@ -6,15 +6,16 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: pwsh
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
-          node-version: '16'
-          cache: 'npm'
-      - name: Install Node Packages
-        run: npm install
+          node-version: 24
+          cache: npm
+      - name: Install Node packages
+        run: npm ci
       - name: Validate Schema
         run: npm run validate
-      - name: Export Resume
-        run: mkdir ./public && npm run export_html

@@ -14,7 +14,6 @@
       "runOnChangeOnly": false
     }
   },
-  "packageManager": "npm@11.16.0",
   "scripts": {
     "update": "yaml2json resume.yaml > resume.json",
     "prevalidate": "npm run update",
@@ -22,11 +21,17 @@
     "preserve": "npm run validate",
     "serve": "resumefy render --outDir public --watch",
     "preexport": "npm run validate",
-    "export": "resumefy render --outDir public",
+    "export": "resumefy render --outDir public --headless",
     "watch": "concurrently \"npm-watch update\" \"npm run serve\""
   },
   "dependencies": {
-    "jsonresume-theme-even": "^0.26.1"
+    "jsonresume-theme-even": "^0.26.1",
+    "jsonresume-theme-paperalt": "0.2.5"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm"
+    }
   },
   "devDependencies": {
     "concurrently": "^10.0.3",
