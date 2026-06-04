@@ -19,6 +19,8 @@ jobs:
         run: npm ci
       - name: Validate Resume Schema
         run: npm run validate
+      - name: Rename resume.html
+        run: mv public/resume.html public/index.html
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
