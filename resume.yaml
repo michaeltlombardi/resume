@@ -1,122 +1,164 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+$schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+meta:
+  canonical:    https://michaeltlombardi.github.io/resume/
+  lastModified: 2024-06-03
+  version:      0.2.0
+  theme:        jsonresume-theme-even
 
 basics:
-  name: Michael T. Lombardi
-  label: Humane IT Proponent
+  name:    Mikey Lombardi
+  label:   Humane IT Proponent
   picture: https://github.com/michaeltlombardi/resume/raw/main/images/profile.jpg
-  email: michael.t.lombardi@gmail.com
+  email:   michael.t.lombardi@gmail.com
   summary: >-
-    Senior developer, toolmaker, and writer
-    with a focus in working across teams to architect and improve systems
-    and solutions, reducing the time teams (my own and others) spend on repetitive work,
-    and improving the rate and quality of service delivery.
+    Developer, toolmaker, and writer with a focus in working across teams to architect and
+    improve systems and solutions, reducing the time teams (my own and others) spend on repetitive
+    work, and improving the rate and quality of service delivery.
   profiles:
-    - network: Github
+    - network:  Github
       username: michaeltlombardi
-      url: "https://github.com/michaeltlombardi"
-    - network: Twitter
-      username: TrebuchetOps
-      url: "https://www.twitter.com/TrebuchetOps"
+      url:      https://github.com/michaeltlombardi
+    - network:  Leanpub
+      username: michaeltlombardi
+      url:      https://leanpub.com/u/michaeltlombardi
+
 work:
-  - company: Puppet, Inc
-    position: Senior Software Engineer
-    website: https://puppet.com
-    startDate: 2017-09
+  - company:   Microsoft Corporation
+    position:  Senior Content Developer
+    website:   https://microsoft.com
+    startDate: 2022-02
     summary: >-
-      Senior Software Engineer on the Developer Experience team,
-      focused improving the experience and workflow for writing Puppet content
-      inside and outside of the organization.
+      Senior Content Developer on the Azure Core team, responsible for documenting PowerShell and
+      Desired State Configuration (DSC).
     highlights:
       - >-
-        Co-designed and implemented a prototype to improve UI latency from 10s of seconds to sub-second response times without loss of functionality
+        Responsible for writing, editing, and maintaining hundreds of reference and conceptual
+        articles across multiple platforms, products, and versions to ensure customers have the
+        information they need to be successful.
       - >-
-        Co-designed and implemented a prototype to reimagine code execution and validation locally and in CI,
-        expanding flexibility and reducing maintenance costs for developers and users alike.
+        Co-designed, implemented, and maintain the Documentarian PowerShell modules to improve the
+        experience of authoring and maintaining PowerShell documentation.
       - >-
-        Developed and maintained more than sixty repositories of tools and libraries,
-        including cross-language exection, infrastructure configuration, code validation, and test frameworks.
+        Designed and implemented improvements to continuous integration and local development
+        workflows for documentation to reduce defects, improve the PR review experience, and reduce
+        the time to publish documentation.
+      - >-
+        Provided technical guidance including writing specifications, defining processes, authoring
+        RFCs for DSC, helping to improve the safety, ergonomics, and ease of integration for the
+        platform.
+
+  - company:   Puppet, Inc
+    position:  Senior Software Engineer
+    website:   https://puppet.com
+    startDate: 2017-09
+    endDate:   2022-02
+    summary: >-
+      Senior Software Engineer on the Developer Experience team, focused improving the experience
+      and workflow for writing Puppet content inside and outside of the organization.
+    highlights:
+      - >-
+        Co-designed and implemented a prototype to improve UI latency from 10s of seconds to
+        sub-second response times without loss of functionality.
+      - >-
+        Co-designed and implemented a prototype to reimagine code execution and validation locally
+        and in CI, expanding flexibility and reducing maintenance costs for developers and users
+        alike.
+      - >-
+        Developed and maintained more than sixty repositories of tools and libraries, including
+        cross-language exection, infrastructure configuration, code validation, and test
+        frameworks.
       - >-
          Co-pioneered Community Day with the team to improve throughput of open source contributions
-         and drastically improve the release cycle of tools and modules
+         and drastically improve the release cycle of tools and modules.
       - >-
-        Led transformation and standardization of team practices around development, documentation, architecture, and workflow
-  - company: Maritz
-    position: Automation Engineer
+        Led transformation and standardization of team practices around development, documentation,
+        architecture, and workflow.
+
+  - company:   Maritz
+    position:  Automation Engineer
     startDate: 2016-06
-    endDate: 2017-09
+    endDate:   2017-09
     summary: >-
-      Automation Engineer on the Automation and Monitoring Team within the
-      Infrastructure Services organization. Responsible for cross-platform
-      automation tool development and implementation, documentation, and mentoring.
+      Automation Engineer on the Automation and Monitoring Team within the Infrastructure Services
+      organization. Responsible for cross-platform automation tool development and implementation,
+      documentation, and mentoring.
     highlights:
-      - Developed, documented, and maintained a PowerShell module for single-sign-on across multiple domains
-      - Coached and mentored the Infrastructure department through an Agile transformation
-      - Propogated development practices across operations teams via training and mentoring
-  - company: "CSRA, Inc"
-    position: Systems Administrator
-    website: "https://www.csra.com/"
+      - >-
+        Developed, documented, and maintained a PowerShell module for single-sign-on across
+        multiple domains
+      - >-
+        Coached and mentored the Infrastructure department through an Agile transformation
+      - >-
+        Propagated development practices across operations teams via training and mentoring
+
+  - company:   CSRA, Inc
+    position:  Systems Administrator
+    website:   https://www.csra.com/
     startDate: 2015-11
-    endDate: "2016-06"
+    endDate:   2016-06
     summary: >-
-      Managed an infrastructure and hosting platform for US Army Surface
-      Deployment Distribution Command programs, acting as a combination of
-      hosting provider, technical support, and service architect for over 20
-      separate customers and ensuring the security and availability of systems
-      which manage the transit of material goods for the American warfighter.
+      Managed an infrastructure and hosting platform for US Army Surface Deployment Distribution
+      Command programs, acting as a combination of hosting provider, technical support, and service
+      architect for over 20 separate customers and ensuring the security and availability of
+      systems which manage the transit of material goods for the American warfighter.
     highlights:
-      - Developed PowerShell modules for infrastructure automation
-      - Organized and executed PowerShell training for the organization
-      - Developed and documented processes for task automation
-  - company: Harris Corporation
-    position: Systems Administrator
-    website: "http://harris.com/"
+      - >-
+        Developed PowerShell modules for infrastructure automation
+      - >-
+        Organized and executed PowerShell training for the organization
+      - >-
+        Developed and documented processes for task automation
+
+  - company:   Harris Corporation
+    position:  Systems Administrator
+    website:   http://harris.com/
     startDate: 2013-02
-    endDate: "2015-10"
+    endDate:   2015-10
     summary: >-
-      Ensured the coordination of aeromedical evacuations of American service
-      members globally and provided in-transit visibility of the injured service
-      members for USTRANSCOM's TRAC2ES program.
+      Ensured the coordination of aeromedical evacuations of American service members globally and
+      provided in-transit visibility of the injured service members for USTRANSCOM's TRAC2ES
+      program.
     highlights:
       - >-
-        Developed PowerShell modules for infrastructure auditing, maintenance,
-        orchestration, documentation, and utility functions
+        Developed PowerShell modules for infrastructure auditing, maintenance, orchestration,
+        documentation, and utility functions
       - >-
-        Engineered lifecycle for patching and rolling system upgrades to replace
-        a manual process, ensuring reproducibility and reducing associated
-        manpower costs by over 40 hours per month
+        Engineered lifecycle for patching and rolling system upgrades to replace a manual process,
+        ensuring reproducibility and reducing associated manpower costs by over 40 hours per month
       - >-
-        Developed daily automatic reporting for project management providing
-        holistic visibility of service health and reducing time to discovery and
-        time to recovery, reducing associated manpower costs by over 20 hours
-        per month
+        Developed daily automatic reporting for project management providing holistic visibility of
+        service health and reducing time to discovery and time to recovery, reducing associated
+        manpower costs by over 20 hours per month
+
 volunteer:
   - organization: St. Louis PowerShell User Group
-    position: Founder
-    website: "http://www.meetup.com/STLPSUG/"
-    startDate: 2015-12
-    endDate: "2020-01"
+    position:     Founder
+    website:      http://www.meetup.com/STLPSUG/
+    startDate:    2015-12
+    endDate:      2020-01
     summary: >-
-      Founded regional organization to make life easier for IT Professionals in
-      the St. Louis area and to build a strong and helpful community around best
-      practices and continual improvement.
+      Founded regional organization to make life easier for IT Professionals in the St. Louis area
+      and to build a strong and helpful community around best practices and continual improvement.
     highlights: []
+
 publications:
-  - name: The PowerShell Conference Book
-    releaseDate:  2018-09
-    publisher:  The DevOps Collective, Inc
-    website: https://leanpub.com/powershell-conference-book
+  - name:        The PowerShell Conference Book
+    releaseDate: 2018-09
+    publisher:   The DevOps Collective, Inc
+    website:     https://leanpub.com/powershell-conference-book
     summary: >-
-      Editor and contributing author to the PowerShell Conference book, a project
-      which brought more than 30 community experts together to raise funds for
-      people transitioning into IT Operations roles.
-  - name: The PowerShell Conference Book Vol 2
+      Editor and contributing author to the PowerShell Conference book, a project which brought
+      more than 30 community experts together to raise funds for people transitioning into IT
+      Operations roles.
+  - name:        The PowerShell Conference Book Vol 2
     releaseDate: 2019-09
-    publisher:  The DevOps Collective, Inc
-    website: https://leanpub.com/psconfbook2
+    publisher:   The DevOps Collective, Inc
+    website:     https://leanpub.com/psconfbook2
     summary: >-
-      Lead editor and project organizer to the second volume of the PowerShell
-      Conference Book containing over 40 chapters of technical content to
-      raise money for people transitioning into IT Operations roles.
+      Lead editor and project organizer to the second volume of the PowerShell Conference Book
+      containing over 40 chapters of technical content to raise money for people transitioning into
+      IT Operations roles.
 
 skills:
   - name: Automation Development
@@ -126,40 +168,111 @@ skills:
       - GitHub Actions
       - PowerShell
   - name: Configuration Management
-    level: Principal
+    level: Senior
     keywords:
-      - PowerShell DSC
+      - DSC
       - Puppet
-      - Bolt
   - name: Library Development
     level: Senior
     keywords:
       - Go
       - PowerShell
       - Puppet
-      - Ruby
+      - Rust
   - name: Documentation
-    level: Expert
+    level: Senior
     keywords:
       - ADR
       - Markdown
-      - Advocation
+      - Advocacy
       - Training
+      - Editing
+
 interests:
   - name: Analog Game Design
     keywords:
       - Tabletop Role Playing Games
       - Narrative Skirmish Games
       - Playing Card Games
+
 references: []
+
 projects:
-  - name: Puppet.Dsc
+  - name:      Desired State Configuration (DSC)
+    type:      Open source project
+    url:       https://learn.microsoft.com/powershell/dsc/overview?view=dsc-3.0&preserveView=true
+    sourceUrl: https://github.com/PowerShell/DSC
+    startDate: 2023-03
     description: >-
-      Led architecture and development of Puppet.Dsc,
-      seamlessly exposing and integrating Microsoft's primary automation framework (DSC) with Puppet,
-      allowing folks familiar with either tool to be proficient with both.
-      The judicious use of automation in the project improved flexibility and coverage (hundreds of modules and thousands of resources)
-      while reducing engineering and customer maintenance costs by orders of magnitude.
-    url: https://www.youtube.com/watch?v=Rw1gB-h77X0
+      Maintainer and documentarian for Desired State Configuration (DSC), Microsoft's idempotent
+      and declarative configuration management platform. DSC provides a powerful and flexible
+      engine for managing the state of computer systems and their components, building a set of
+      semantics and contracts that support a rich ecosystem of resources and integrations into any
+      existing toolchain.
+    roles:
+      - Technical writer
+      - Maintainer
+      - Community liaison
+      - Schema owner
+    highlights:
+      - >-
+        Contributed to the design and development of the platform, including writing
+        specifications, defining processes, authoring RFCs, and helping to improve the safety,
+        ergonomics, and ease of integration for the platform.
+      - >-
+        Authored and maintained enhanced JSON Schemas for every input and output data type the
+        platform accepts or produces, improving the ergonomics and reliability of the data
+        contracts.
+      - >-
+        Refactored and improved the maintenance tools used in local development and continuous
+        integration, improving compile and test times by an order of magnitude and improving the
+        PR review experience by providing more comprehensive feedback.
+      - >-
+        Provided technical guidance to customers and partners on: using and integrating with the
+        platform; authoring resources, extensions, and configuration documents; adopting DevOps
+        and infrastructure as code practices; and troubleshooting and debugging issues with the
+        platform and ecosystem components.
+    
+  - name:      Documentarian
+    type:      Open source project
+    url:       https://microsoft.github.io/Documentarian/
+    sourceUrl: https://github.com/Microsoft/Documentarian
+    startDate: 2022-10
+    description: >-
+      Co-designed and implemented the Documentarian PowerShell modules to improve the experience of
+      authoring and maintaining PowerShell documentation.
+    roles:
+      - Architect
+      - Developer
+      - Maintainer
+      - Documentarian
+    highlights:
+      - >-
+        The Documentarian module provides general commands and helpers for editing and maintaining
+        Markdown documents.
+      - >-
+        The Documentarian.MarkdownBuilder module provides commands and helpers for a specialized
+        string builder for Markdown text.
+      - >-
+        The Documentarian.MicrosoftDocs module provides commands specifically useful to maintainers
+        of and contributors to official Microsoft documentation.
+      - >-
+        The Documentarian.ModuleAuthor module provides commands and helpers for authoring and
+        maintaining PowerShell module documentation.
+
+  - name: Puppet.Dsc
+    type:      Open source project
     sourceUrl: https://github.com/puppetlabs/Puppet.Dsc
     startDate: 2020-03
+    endDate:   2022-02
+    description: >-
+      Led architecture and development of Puppet.Dsc, seamlessly exposing and integrating
+      Microsoft's primary automation framework (DSC) with Puppet, allowing folks familiar with
+      either tool to be proficient with both. The judicious use of automation in the project
+      improved flexibility and coverage (hundreds of modules and thousands of resources) while
+      reducing engineering and customer maintenance costs by orders of magnitude.
+    roles:
+      - Architect
+      - Developer
+      - Maintainer
+      - Documentarian
