@@ -1,8 +1,7 @@
 {
   "name": "michaeltlombardi-resume",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Resume for Michael T. Lombardi",
-  "main": "index.js",
   "watch": {
     "update": {
       "patterns": [
@@ -17,18 +16,27 @@
   },
   "scripts": {
     "update": "yaml2json resume.yaml > resume.json",
-    "prevalidate": "yaml2json resume.yaml > resume.json",
-    "validate": "resume validate",
-    "preserve": "yaml2json resume.yaml > resume.json",
-    "serve": "resume serve --theme paperalt",
-    "export_html": "resume export --format html --theme paperalt ./public/index.html",
-    "export_pdf": "resume export --format pdf --theme paperalt",
-    "watch": "npm-watch update"
+    "prevalidate": "npm run update",
+    "validate": "resumefy validate",
+    "preserve": "npm run validate",
+    "serve": "resumefy render --outDir public --watch",
+    "preexport": "npm run validate",
+    "export": "resumefy render --outDir public --headless",
+    "watch": "concurrently \"npm-watch update\" \"npm run serve\""
   },
   "dependencies": {
-    "jsonresume-theme-paperalt": "^0.2.5",
-    "npm-watch": "^0.11.0",
-    "resume-cli": "^3.0.0",
+    "jsonresume-theme-even": "^0.26.1",
+    "jsonresume-theme-paperalt": "0.2.5"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm"
+    }
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "npm-watch": "^0.13.0",
+    "resumefy": "^1.6.0",
     "yamljs": "0.3.0"
   },
   "repository": {
@@ -36,10 +44,14 @@
     "url": "git+https://github.com/michaeltlombardi/resume.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Michael T. Lombardi",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/michaeltlombardi/resume/issues"
   },
-  "homepage": "https://michaeltlombardi.github.io/resume"
+  "homepage": "https://michaeltlombardi.github.io/resume",
+  "allowScripts": {
+    "core-js@3.49.0": true,
+    "puppeteer@24.5.0": true
+  }
 }
